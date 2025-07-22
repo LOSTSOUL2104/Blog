@@ -31,16 +31,24 @@ function displayBlogs(blogArray = blogs) {
     const li = document.createElement("li");
     li.className = "rounded-lg border p-4 bg-gray-50 space-y-2 shadow-sm";
     li.innerHTML = `
-      <h3 class="text-lg font-bold text-gray-800">${blog.title}</h3>
-      <p class="text-gray-700">${blog.content}</p>
-      <div class="text-sm text-gray-500">
-        <strong>Author:</strong> ${blog.author} |
-        <strong>Date:</strong> ${blog.date}
-      </div>
-      <button class="bg-red-500 hover:bg-red-600 text-white text-sm px-3 py-1 rounded-md" onclick="deleteBlog(${blog.id})">
-        Delete
+  <div class="flex flex-col gap-2">
+    <div class="flex items-start justify-between">
+      <h3 class="text-xl font-semibold text-blue-700">${blog.title}</h3>
+      <button
+        onclick="deleteBlog(${blog.id})"
+        class="text-red-600 hover:text-red-800 text-sm font-medium transition"
+      >
+        ✖
       </button>
-    `;
+    </div>
+    <p class="text-gray-700 leading-relaxed">${blog.content}</p>
+    <div class="flex justify-between text-sm text-gray-500 pt-2 border-t border-gray-200">
+      <span>👤 ${blog.author}</span>
+      <span>🗓️ ${blog.date}</span>
+    </div>
+  </div>
+`;
+
     blogList.appendChild(li);
   });
 }

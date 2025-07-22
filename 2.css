@@ -1,33 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  font-family: "Open Sans", sans-serif;
 }
-
-.upperBody2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0;
-  font-size: 24px;
-  background-color: #e9ecef;
-  border-bottom: 1px solid #ccc;
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
-
-.middleBody {
-  padding: 20px;
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
 }
-
-.createBlog {
-  font-weight: bold;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-#blogList {
-  margin-top: 20px;
-}
-
-.list-group-item span {
-  font-size: 20px;
+.neon-glow {
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
 }

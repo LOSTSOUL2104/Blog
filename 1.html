@@ -6,121 +6,117 @@
     <title>Blog Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-white text-gray-800 min-h-screen">
-    <nav class="bg-white shadow-md border-b border-gray-200 w-full">
-      <div class="container mx-auto px-6 py-4 flex justify-center">
+  <body class="bg-black text-white min-h-screen">
+    <nav class="bg-zinc-900 border-b border-zinc-800 w-full">
+      <div class="container mx-auto px-6 py-6 flex justify-center">
         <a
-          class="text-3xl font-bold text-blue-600 hover:text-blue-800 transition-colors"
+          class="text-2xl font-bold text-white hover:text-gray-300 transition-colors"
           href="#"
         >
-          Blog Platform
+          BLOG
         </a>
       </div>
     </nav>
 
-    <main class="container mx-auto px-6 py-10">
-      <div class="text-center mb-10">
-        <h1 class="text-4xl font-bold mb-2 text-gray-900">Speak Your Mind</h1>
-        <p class="text-gray-600 text-lg">
-          Because the world needs your hot takes.
+    <main class="container mx-auto px-6 py-16 max-w-2xl">
+      <div class="text-center mb-16">
+        <h1 class="text-5xl font-bold mb-4 text-white">
+          Write Something
+        </h1>
+        <p class="text-gray-400 text-lg">
+          Simple blogging for everyone
         </p>
       </div>
 
-      <div
-        class="max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-8 border border-gray-200 mb-10"
-      >
-        <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">
-          Create Blog Post
+      <div class="bg-zinc-900 rounded-lg p-8 mb-12 border border-zinc-800">
+        <h2 class="text-xl font-semibold text-white mb-8">
+          New Post
         </h2>
 
         <div class="space-y-6">
           <div>
             <label
               for="titleInput"
-              class="block text-sm font-semibold text-gray-700 mb-1"
+              class="block text-sm font-medium text-gray-300 mb-2"
             >
-              Blog Title
+              Title
             </label>
             <input
               type="text"
               id="titleInput"
-              class="w-full rounded-lg px-4 py-3 bg-gray-100 border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
-              placeholder="title..."
+              class="w-full rounded-md px-4 py-3 bg-black border border-zinc-700 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors"
+              placeholder="Enter title..."
             />
           </div>
 
           <div>
             <label
               for="authorInput"
-              class="block text-sm font-semibold text-gray-700 mb-1"
+              class="block text-sm font-medium text-gray-300 mb-2"
             >
-              Author Name
+              Author
             </label>
             <input
               type="text"
               id="authorInput"
-              class="w-full rounded-lg px-4 py-3 bg-gray-100 border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
-              placeholder="name"
+              class="w-full rounded-md px-4 py-3 bg-black border border-zinc-700 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors"
+              placeholder="Your name..."
             />
           </div>
 
           <div>
             <label
               for="contentInput"
-              class="block te`xt-sm font-semibold text-gray-700 mb-1"
+              class="block text-sm font-medium text-gray-300 mb-2"
             >
-              Blog Content
+              Content
             </label>
             <textarea
               id="contentInput"
               rows="6"
-              class="w-full rounded-lg px-4 py-3 bg-gray-100 border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 resize-none"
-              placeholder="content here"
+              class="w-full rounded-md px-4 py-3 bg-black border border-zinc-700 text-white placeholder-gray-500 focus:outline-none focus:border-white resize-none transition-colors"
+              placeholder="Write your post..."
             ></textarea>
           </div>
 
           <div class="text-center">
             <button
               id="addBlogBtn"
-              class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+              class="bg-white text-black px-8 py-3 rounded-md font-medium hover:bg-gray-200 transition-colors"
             >
-              🚀 Add Blog
+              Publish
             </button>
           </div>
         </div>
       </div>
 
-      <div
-        class="max-w-3xl mx-auto bg-white shadow-md rounded-2xl p-6 mb-10 border border-gray-200"
-      >
-        <h2 class="text-xl font-semibold text-center text-gray-800 mb-4">
-          Search Blogs
+      <div class="bg-zinc-900 rounded-lg p-6 mb-12 border border-zinc-800">
+        <h2 class="text-lg font-semibold text-white mb-4">
+          Search
         </h2>
 
-        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <div class="flex gap-3">
           <input
             type="text"
             id="searchInput"
-            class="flex-1 border border-gray-300 bg-gray-100 text-gray-800 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-gray-500"
-            placeholder="Search by title..."
+            class="flex-1 border border-zinc-700 bg-black text-white rounded-md px-4 py-2 text-sm focus:outline-none focus:border-white placeholder-gray-500 transition-colors"
+            placeholder="Search posts..."
           />
           <button
-            class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+            class="bg-white text-black px-6 py-2 rounded-md font-medium hover:bg-gray-200 transition-colors"
           >
-            SEARCH
+            Search
           </button>
         </div>
       </div>
 
-      <div
-        class="max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-8 border border-gray-200"
-      >
-        <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">
-          Blog Posts
+      <div class="bg-zinc-900 rounded-lg p-8 border border-zinc-800">
+        <h2 class="text-xl font-semibold text-white mb-6">
+          Posts
         </h2>
         <ul class="space-y-4" id="blogList">
-          <li class="text-gray-500 text-center py-8">
-            No blogs found. Create your first blog post!
+          <li class="text-gray-400 text-center py-8">
+            No posts yet. Create your first one above.
           </li>
         </ul>
       </div>
