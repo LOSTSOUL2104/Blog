@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.upperBody2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 24px;
+  background-color: #e9ecef;
+  border-bottom: 1px solid #ccc;
+}
+
+.middleBody {
+  padding: 20px;
+}
+
+.createBlog {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#blogList {
+  margin-top: 20px;
+}
+
+.list-group-item span {
+  font-size: 20px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800 min-h-screen">
+    <nav class="bg-white shadow-md border-b border-gray-200 w-full">
+      <div class="container mx-auto px-6 py-4 flex justify-center">
+        <a
+          class="text-3xl font-bold text-blue-600 hover:text-blue-800 transition-colors"
+          href="#"
+        >
+          Blog Platform
+        </a>
+      </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-10">
+      <div class="text-center mb-10">
+        <h1 class="text-4xl font-bold mb-2 text-gray-900">Speak Your Mind</h1>
+        <p class="text-gray-600 text-lg">
+          Because the world needs your hot takes.
+        </p>
+      </div>
+
+      <div
+        class="max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-8 border border-gray-200 mb-10"
+      >
+        <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">
+          Create Blog Post
+        </h2>
+
+        <div class="space-y-6">
+          <div>
+            <label
+              for="titleInput"
+              class="block text-sm font-semibold text-gray-700 mb-1"
+            >
+              Blog Title
+            </label>
+            <input
+              type="text"
+              id="titleInput"
+              class="w-full rounded-lg px-4 py-3 bg-gray-100 border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
+              placeholder="title..."
+            />
+          </div>
+
+          <div>
+            <label
+              for="authorInput"
+              class="block text-sm font-semibold text-gray-700 mb-1"
+            >
+              Author Name
+            </label>
+            <input
+              type="text"
+              id="authorInput"
+              class="w-full rounded-lg px-4 py-3 bg-gray-100 border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
+              placeholder="name"
+            />
+          </div>
+
+          <div>
+            <label
+              for="contentInput"
+              class="block te`xt-sm font-semibold text-gray-700 mb-1"
+            >
+              Blog Content
+            </label>
+            <textarea
+              id="contentInput"
+              rows="6"
+              class="w-full rounded-lg px-4 py-3 bg-gray-100 border border-gray-300 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 resize-none"
+              placeholder="content here"
+            ></textarea>
+          </div>
+
+          <div class="text-center">
+            <button
+              id="addBlogBtn"
+              class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+            >
+              🚀 Add Blog
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-3xl mx-auto bg-white shadow-md rounded-2xl p-6 mb-10 border border-gray-200"
+      >
+        <h2 class="text-xl font-semibold text-center text-gray-800 mb-4">
+          Search Blogs
+        </h2>
+
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <input
+            type="text"
+            id="searchInput"
+            class="flex-1 border border-gray-300 bg-gray-100 text-gray-800 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-gray-500"
+            placeholder="Search by title..."
+          />
+          <button
+            class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+          >
+            SEARCH
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-8 border border-gray-200"
+      >
+        <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">
+          Blog Posts
+        </h2>
+        <ul class="space-y-4" id="blogList">
+          <li class="text-gray-500 text-center py-8">
+            No blogs found. Create your first blog post!
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="3.js"></script>
+  </body>
+</html>
